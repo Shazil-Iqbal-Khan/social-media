@@ -60,6 +60,7 @@ def loginn(request):
   return render(request, 'loginn.html')
 
 @login_required(login_url='/loginn')
+
 def logoutt(request):
     logout(request)
     return redirect('/loginn')
